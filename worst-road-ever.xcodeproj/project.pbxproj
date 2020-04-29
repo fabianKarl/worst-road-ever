@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FCEF02C2459700D00683B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02B2459700D00683B6E /* AppDelegate.swift */; };
+		1FCEF02E2459700D00683B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02D2459700D00683B6E /* SceneDelegate.swift */; };
+		1FCEF0302459700D00683B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02F2459700D00683B6E /* ContentView.swift */; };
+		1FCEF0322459700E00683B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0312459700E00683B6E /* Assets.xcassets */; };
+		1FCEF0352459700E00683B6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0342459700E00683B6E /* Preview Assets.xcassets */; };
+		1FCEF0382459700E00683B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */; };
+		1FCEF0432459700F00683B6E /* worst_road_everTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF0422459700F00683B6E /* worst_road_everTests.swift */; };
+		1FCEF04E2459700F00683B6E /* worst_road_everUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FCEF03F2459700F00683B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FCEF0202459700D00683B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCEF0272459700D00683B6E;
+			remoteInfo = "worst-road-ever";
+		};
+		1FCEF04A2459700F00683B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FCEF0202459700D00683B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCEF0272459700D00683B6E;
+			remoteInfo = "worst-road-ever";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FCEF0282459700D00683B6E /* worst-road-ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worst-road-ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCEF02B2459700D00683B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FCEF02D2459700D00683B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FCEF02F2459700D00683B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FCEF0312459700E00683B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FCEF0342459700E00683B6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FCEF0372459700E00683B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FCEF0392459700E00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worst-road-everTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCEF0422459700F00683B6E /* worst_road_everTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worst_road_everTests.swift; sourceTree = "<group>"; };
+		1FCEF0442459700F00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worst-road-everUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worst_road_everUITests.swift; sourceTree = "<group>"; };
+		1FCEF04F2459700F00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FCEF0252459700D00683B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF03B2459700F00683B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF0462459700F00683B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCEF01F2459700D00683B6E = {
+			isa = PBXGroup;
+			children = (
+				1FCEF02A2459700D00683B6E /* worst-road-ever */,
+				1FCEF0412459700F00683B6E /* worst-road-everTests */,
+				1FCEF04C2459700F00683B6E /* worst-road-everUITests */,
+				1FCEF0292459700D00683B6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FCEF0292459700D00683B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEF0282459700D00683B6E /* worst-road-ever.app */,
+				1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */,
+				1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FCEF02A2459700D00683B6E /* worst-road-ever */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEF02B2459700D00683B6E /* AppDelegate.swift */,
+				1FCEF02D2459700D00683B6E /* SceneDelegate.swift */,
+				1FCEF02F2459700D00683B6E /* ContentView.swift */,
+				1FCEF0312459700E00683B6E /* Assets.xcassets */,
+				1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */,
+				1FCEF0392459700E00683B6E /* Info.plist */,
+				1FCEF0332459700E00683B6E /* Preview Content */,
+			);
+			path = "worst-road-ever";
+			sourceTree = "<group>";
+		};
+		1FCEF0332459700E00683B6E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEF0342459700E00683B6E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FCEF0412459700F00683B6E /* worst-road-everTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEF0422459700F00683B6E /* worst_road_everTests.swift */,
+				1FCEF0442459700F00683B6E /* Info.plist */,
+			);
+			path = "worst-road-everTests";
+			sourceTree = "<group>";
+		};
+		1FCEF04C2459700F00683B6E /* worst-road-everUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */,
+				1FCEF04F2459700F00683B6E /* Info.plist */,
+			);
+			path = "worst-road-everUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FCEF0272459700D00683B6E /* worst-road-ever */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCEF0522459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-ever" */;
+			buildPhases = (
+				1FCEF0242459700D00683B6E /* Sources */,
+				1FCEF0252459700D00683B6E /* Frameworks */,
+				1FCEF0262459700D00683B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "worst-road-ever";
+			productName = "worst-road-ever";
+			productReference = 1FCEF0282459700D00683B6E /* worst-road-ever.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FCEF03D2459700F00683B6E /* worst-road-everTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCEF0552459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everTests" */;
+			buildPhases = (
+				1FCEF03A2459700F00683B6E /* Sources */,
+				1FCEF03B2459700F00683B6E /* Frameworks */,
+				1FCEF03C2459700F00683B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FCEF0402459700F00683B6E /* PBXTargetDependency */,
+			);
+			name = "worst-road-everTests";
+			productName = "worst-road-everTests";
+			productReference = 1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FCEF0482459700F00683B6E /* worst-road-everUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCEF0582459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everUITests" */;
+			buildPhases = (
+				1FCEF0452459700F00683B6E /* Sources */,
+				1FCEF0462459700F00683B6E /* Frameworks */,
+				1FCEF0472459700F00683B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FCEF04B2459700F00683B6E /* PBXTargetDependency */,
+			);
+			name = "worst-road-everUITests";
+			productName = "worst-road-everUITests";
+			productReference = 1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FCEF0202459700D00683B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Fabian Karl";
+				TargetAttributes = {
+					1FCEF0272459700D00683B6E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					1FCEF03D2459700F00683B6E = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1FCEF0272459700D00683B6E;
+					};
+					1FCEF0482459700F00683B6E = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1FCEF0272459700D00683B6E;
+					};
+				};
+			};
+			buildConfigurationList = 1FCEF0232459700D00683B6E /* Build configuration list for PBXProject "worst-road-ever" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FCEF01F2459700D00683B6E;
+			productRefGroup = 1FCEF0292459700D00683B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FCEF0272459700D00683B6E /* worst-road-ever */,
+				1FCEF03D2459700F00683B6E /* worst-road-everTests */,
+				1FCEF0482459700F00683B6E /* worst-road-everUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FCEF0262459700D00683B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCEF0382459700E00683B6E /* LaunchScreen.storyboard in Resources */,
+				1FCEF0352459700E00683B6E /* Preview Assets.xcassets in Resources */,
+				1FCEF0322459700E00683B6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF03C2459700F00683B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF0472459700F00683B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FCEF0242459700D00683B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCEF02C2459700D00683B6E /* AppDelegate.swift in Sources */,
+				1FCEF02E2459700D00683B6E /* SceneDelegate.swift in Sources */,
+				1FCEF0302459700D00683B6E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF03A2459700F00683B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCEF0432459700F00683B6E /* worst_road_everTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCEF0452459700F00683B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCEF04E2459700F00683B6E /* worst_road_everUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FCEF0402459700F00683B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCEF0272459700D00683B6E /* worst-road-ever */;
+			targetProxy = 1FCEF03F2459700F00683B6E /* PBXContainerItemProxy */;
+		};
+		1FCEF04B2459700F00683B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCEF0272459700D00683B6E /* worst-road-ever */;
+			targetProxy = 1FCEF04A2459700F00683B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCEF0372459700E00683B6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FCEF0502459700F00683B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FCEF0512459700F00683B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FCEF0532459700F00683B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"worst-road-ever/Preview Content\"";
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "worst-road-ever/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-ever";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FCEF0542459700F00683B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"worst-road-ever/Preview Content\"";
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "worst-road-ever/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-ever";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FCEF0562459700F00683B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				INFOPLIST_FILE = "worst-road-everTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/worst-road-ever.app/worst-road-ever";
+			};
+			name = Debug;
+		};
+		1FCEF0572459700F00683B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				INFOPLIST_FILE = "worst-road-everTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/worst-road-ever.app/worst-road-ever";
+			};
+			name = Release;
+		};
+		1FCEF0592459700F00683B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				INFOPLIST_FILE = "worst-road-everUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "worst-road-ever";
+			};
+			name = Debug;
+		};
+		1FCEF05A2459700F00683B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z62UW8ZMM7;
+				INFOPLIST_FILE = "worst-road-everUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "worst-road-ever";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FCEF0232459700D00683B6E /* Build configuration list for PBXProject "worst-road-ever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCEF0502459700F00683B6E /* Debug */,
+				1FCEF0512459700F00683B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCEF0522459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-ever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCEF0532459700F00683B6E /* Debug */,
+				1FCEF0542459700F00683B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCEF0552459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCEF0562459700F00683B6E /* Debug */,
+				1FCEF0572459700F00683B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCEF0582459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCEF0592459700F00683B6E /* Debug */,
+				1FCEF05A2459700F00683B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FCEF0202459700D00683B6E /* Project object */;
+}
