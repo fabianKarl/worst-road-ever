@@ -10,19 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let delegate = AppDelegate()
-
-    @IBOutlet weak var VibrationLable: UILabel!
+    @IBOutlet weak var vibrationLable: UILabel!
+    var vib_value: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        vibrationLable.text = "0.00"
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        VibrationLable.text = String(format:"%.2f", delegate.vibration_value)
+        vibrationLable.text = String(format:"%.2f", self.vib_value)
     }
 
 

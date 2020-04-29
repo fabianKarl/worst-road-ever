@@ -41,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				1F4C38E62459EE40008D1F38 /* worst-road-ever */,
-				1F4C38E52459EE40008D1F38 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +50,7 @@
 				1F4C38E42459EE40008D1F38 /* worst-road-ever.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1F4C38E62459EE40008D1F38 /* worst-road-ever */ = {
@@ -62,6 +62,7 @@
 				1F4C38ED2459EE40008D1F38 /* Main.storyboard */,
 				1F4C38F02459EE41008D1F38 /* Assets.xcassets */,
 				1F4C38F22459EE41008D1F38 /* LaunchScreen.storyboard */,
+				1F4C38E52459EE40008D1F38 /* Products */,
 				1F4C38F52459EE41008D1F38 /* Info.plist */,
 			);
 			path = "worst-road-ever";

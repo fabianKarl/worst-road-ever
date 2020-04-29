@@ -34,7 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let motion: CMMotionManager = CMMotionManager()
     var timer: Timer = Timer()
-    var vibration_value: Double = 0
+    var controller = ViewController()
+    dynamic var vibration_value: CGFloat = 0.0 {
+        didSet {
+            self.controller.viewDidLoad()
+        }
+    }
+
+    
     
     var vertiacl_accelerations = Queue<Double>()
     
@@ -86,8 +93,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print(zAcceleration*direction)
                     let values = self.vertiacl_accelerations.list
                     if (values.count >= 120) {
-                        self.vibration_value = values.max()! - values.min()!
+                        self.controller.vib_value = values.max()! - values.min()!
+                        self.vibration_value = CGFloat(values.max()! - values.min()!)
+                        
                         self.vertiacl_accelerations.dequeue()
+                        
                     }
                     self.vertiacl_accelerations.enqueue(zAcceleration*direction)
                 }
