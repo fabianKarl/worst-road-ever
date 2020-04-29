@@ -10,11 +10,33 @@ import UIKit
 import CoreMotion
 import simd
 
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    struct Queue<T> {
+         var list = [T]()
+    
+
+    mutating func enqueue(_ element: T) {
+          list.append(element)
+    }
+    mutating func dequeue() -> T? {
+         if !list.isEmpty {
+           return list.removeFirst()
+         } else {
+           return nil
+         }
+    }
+    }
+    
     let motion: CMMotionManager = CMMotionManager()
     var timer: Timer = Timer()
+    var vibration_value: Double = 0
+    
+    var vertiacl_accelerations = Queue<Double>()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -46,13 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Configure a timer to fetch the data.
             self.timer = Timer(fire: Date(), interval: (1.0/60.0), repeats: true, block: { (timer) in
                 // Get the accelerometer data.
-                if let data = self.motion.accelerometerData {
-                    let x = data.acceleration.x
-                    let y = data.acceleration.y
-                    let z = data.acceleration.z
-                    
-                    // Use the accelerometer data in your app.
-                }
                 // taken from https://stackoverflow.com/questions/47073389/detect-acceleration-in-absolute-vertical-axis
                 if let deviceMotion = self.motion.deviceMotion {
                     
@@ -69,6 +84,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let zAcceleration = simd_length(zVector)
                     let direction = sign(Double(zVector.x * zVector.y * zVector.z))
                     print(zAcceleration*direction)
+                    let values = self.vertiacl_accelerations.list
+                    if (values.count >= 120) {
+                        self.vibration_value = values.max()! - values.min()!
+                        self.vertiacl_accelerations.dequeue()
+                    }
+                    self.vertiacl_accelerations.enqueue(zAcceleration*direction)
                 }
                 
             })

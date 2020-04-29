@@ -7,66 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FCEF02C2459700D00683B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02B2459700D00683B6E /* AppDelegate.swift */; };
-		1FCEF02E2459700D00683B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02D2459700D00683B6E /* SceneDelegate.swift */; };
-		1FCEF0302459700D00683B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF02F2459700D00683B6E /* ContentView.swift */; };
-		1FCEF0322459700E00683B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0312459700E00683B6E /* Assets.xcassets */; };
-		1FCEF0352459700E00683B6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0342459700E00683B6E /* Preview Assets.xcassets */; };
-		1FCEF0382459700E00683B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */; };
-		1FCEF0432459700F00683B6E /* worst_road_everTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF0422459700F00683B6E /* worst_road_everTests.swift */; };
-		1FCEF04E2459700F00683B6E /* worst_road_everUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */; };
+		1F4C38E82459EE40008D1F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C38E72459EE40008D1F38 /* AppDelegate.swift */; };
+		1F4C38EA2459EE40008D1F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C38E92459EE40008D1F38 /* SceneDelegate.swift */; };
+		1F4C38EC2459EE40008D1F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C38EB2459EE40008D1F38 /* ViewController.swift */; };
+		1F4C38EF2459EE40008D1F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C38ED2459EE40008D1F38 /* Main.storyboard */; };
+		1F4C38F12459EE41008D1F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C38F02459EE41008D1F38 /* Assets.xcassets */; };
+		1F4C38F42459EE41008D1F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C38F22459EE41008D1F38 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1FCEF03F2459700F00683B6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FCEF0202459700D00683B6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FCEF0272459700D00683B6E;
-			remoteInfo = "worst-road-ever";
-		};
-		1FCEF04A2459700F00683B6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FCEF0202459700D00683B6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FCEF0272459700D00683B6E;
-			remoteInfo = "worst-road-ever";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1FCEF0282459700D00683B6E /* worst-road-ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worst-road-ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FCEF02B2459700D00683B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FCEF02D2459700D00683B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FCEF02F2459700D00683B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1FCEF0312459700E00683B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FCEF0342459700E00683B6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1FCEF0372459700E00683B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1FCEF0392459700E00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worst-road-everTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FCEF0422459700F00683B6E /* worst_road_everTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worst_road_everTests.swift; sourceTree = "<group>"; };
-		1FCEF0442459700F00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worst-road-everUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worst_road_everUITests.swift; sourceTree = "<group>"; };
-		1FCEF04F2459700F00683B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4C38E42459EE40008D1F38 /* worst-road-ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worst-road-ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4C38E72459EE40008D1F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F4C38E92459EE40008D1F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F4C38EB2459EE40008D1F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F4C38EE2459EE40008D1F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F4C38F02459EE41008D1F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F4C38F32459EE41008D1F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F4C38F52459EE41008D1F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FCEF0252459700D00683B6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF03B2459700F00683B6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF0462459700F00683B6E /* Frameworks */ = {
+		1F4C38E12459EE40008D1F38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,76 +37,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FCEF01F2459700D00683B6E = {
+		1F4C38DB2459EE40008D1F38 = {
 			isa = PBXGroup;
 			children = (
-				1FCEF02A2459700D00683B6E /* worst-road-ever */,
-				1FCEF0412459700F00683B6E /* worst-road-everTests */,
-				1FCEF04C2459700F00683B6E /* worst-road-everUITests */,
-				1FCEF0292459700D00683B6E /* Products */,
+				1F4C38E62459EE40008D1F38 /* worst-road-ever */,
+				1F4C38E52459EE40008D1F38 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1FCEF0292459700D00683B6E /* Products */ = {
+		1F4C38E52459EE40008D1F38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FCEF0282459700D00683B6E /* worst-road-ever.app */,
-				1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */,
-				1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */,
+				1F4C38E42459EE40008D1F38 /* worst-road-ever.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FCEF02A2459700D00683B6E /* worst-road-ever */ = {
+		1F4C38E62459EE40008D1F38 /* worst-road-ever */ = {
 			isa = PBXGroup;
 			children = (
-				1FCEF02B2459700D00683B6E /* AppDelegate.swift */,
-				1FCEF02D2459700D00683B6E /* SceneDelegate.swift */,
-				1FCEF02F2459700D00683B6E /* ContentView.swift */,
-				1FCEF0312459700E00683B6E /* Assets.xcassets */,
-				1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */,
-				1FCEF0392459700E00683B6E /* Info.plist */,
-				1FCEF0332459700E00683B6E /* Preview Content */,
+				1F4C38E72459EE40008D1F38 /* AppDelegate.swift */,
+				1F4C38E92459EE40008D1F38 /* SceneDelegate.swift */,
+				1F4C38EB2459EE40008D1F38 /* ViewController.swift */,
+				1F4C38ED2459EE40008D1F38 /* Main.storyboard */,
+				1F4C38F02459EE41008D1F38 /* Assets.xcassets */,
+				1F4C38F22459EE41008D1F38 /* LaunchScreen.storyboard */,
+				1F4C38F52459EE41008D1F38 /* Info.plist */,
 			);
 			path = "worst-road-ever";
-			sourceTree = "<group>";
-		};
-		1FCEF0332459700E00683B6E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1FCEF0342459700E00683B6E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1FCEF0412459700F00683B6E /* worst-road-everTests */ = {
-			isa = PBXGroup;
-			children = (
-				1FCEF0422459700F00683B6E /* worst_road_everTests.swift */,
-				1FCEF0442459700F00683B6E /* Info.plist */,
-			);
-			path = "worst-road-everTests";
-			sourceTree = "<group>";
-		};
-		1FCEF04C2459700F00683B6E /* worst-road-everUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1FCEF04D2459700F00683B6E /* worst_road_everUITests.swift */,
-				1FCEF04F2459700F00683B6E /* Info.plist */,
-			);
-			path = "worst-road-everUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FCEF0272459700D00683B6E /* worst-road-ever */ = {
+		1F4C38E32459EE40008D1F38 /* worst-road-ever */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FCEF0522459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-ever" */;
+			buildConfigurationList = 1F4C38F82459EE41008D1F38 /* Build configuration list for PBXNativeTarget "worst-road-ever" */;
 			buildPhases = (
-				1FCEF0242459700D00683B6E /* Sources */,
-				1FCEF0252459700D00683B6E /* Frameworks */,
-				1FCEF0262459700D00683B6E /* Resources */,
+				1F4C38E02459EE40008D1F38 /* Sources */,
+				1F4C38E12459EE40008D1F38 /* Frameworks */,
+				1F4C38E22459EE40008D1F38 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,69 +84,25 @@
 			);
 			name = "worst-road-ever";
 			productName = "worst-road-ever";
-			productReference = 1FCEF0282459700D00683B6E /* worst-road-ever.app */;
+			productReference = 1F4C38E42459EE40008D1F38 /* worst-road-ever.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1FCEF03D2459700F00683B6E /* worst-road-everTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FCEF0552459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everTests" */;
-			buildPhases = (
-				1FCEF03A2459700F00683B6E /* Sources */,
-				1FCEF03B2459700F00683B6E /* Frameworks */,
-				1FCEF03C2459700F00683B6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1FCEF0402459700F00683B6E /* PBXTargetDependency */,
-			);
-			name = "worst-road-everTests";
-			productName = "worst-road-everTests";
-			productReference = 1FCEF03E2459700F00683B6E /* worst-road-everTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1FCEF0482459700F00683B6E /* worst-road-everUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FCEF0582459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everUITests" */;
-			buildPhases = (
-				1FCEF0452459700F00683B6E /* Sources */,
-				1FCEF0462459700F00683B6E /* Frameworks */,
-				1FCEF0472459700F00683B6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1FCEF04B2459700F00683B6E /* PBXTargetDependency */,
-			);
-			name = "worst-road-everUITests";
-			productName = "worst-road-everUITests";
-			productReference = 1FCEF0492459700F00683B6E /* worst-road-everUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FCEF0202459700D00683B6E /* Project object */ = {
+		1F4C38DC2459EE40008D1F38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Fabian Karl";
 				TargetAttributes = {
-					1FCEF0272459700D00683B6E = {
+					1F4C38E32459EE40008D1F38 = {
 						CreatedOnToolsVersion = 11.4.1;
-					};
-					1FCEF03D2459700F00683B6E = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 1FCEF0272459700D00683B6E;
-					};
-					1FCEF0482459700F00683B6E = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 1FCEF0272459700D00683B6E;
 					};
 				};
 			};
-			buildConfigurationList = 1FCEF0232459700D00683B6E /* Build configuration list for PBXProject "worst-road-ever" */;
+			buildConfigurationList = 1F4C38DF2459EE40008D1F38 /* Build configuration list for PBXProject "worst-road-ever" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,92 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 1FCEF01F2459700D00683B6E;
-			productRefGroup = 1FCEF0292459700D00683B6E /* Products */;
+			mainGroup = 1F4C38DB2459EE40008D1F38;
+			productRefGroup = 1F4C38E52459EE40008D1F38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FCEF0272459700D00683B6E /* worst-road-ever */,
-				1FCEF03D2459700F00683B6E /* worst-road-everTests */,
-				1FCEF0482459700F00683B6E /* worst-road-everUITests */,
+				1F4C38E32459EE40008D1F38 /* worst-road-ever */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FCEF0262459700D00683B6E /* Resources */ = {
+		1F4C38E22459EE40008D1F38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FCEF0382459700E00683B6E /* LaunchScreen.storyboard in Resources */,
-				1FCEF0352459700E00683B6E /* Preview Assets.xcassets in Resources */,
-				1FCEF0322459700E00683B6E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF03C2459700F00683B6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF0472459700F00683B6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1F4C38F42459EE41008D1F38 /* LaunchScreen.storyboard in Resources */,
+				1F4C38F12459EE41008D1F38 /* Assets.xcassets in Resources */,
+				1F4C38EF2459EE40008D1F38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FCEF0242459700D00683B6E /* Sources */ = {
+		1F4C38E02459EE40008D1F38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FCEF02C2459700D00683B6E /* AppDelegate.swift in Sources */,
-				1FCEF02E2459700D00683B6E /* SceneDelegate.swift in Sources */,
-				1FCEF0302459700D00683B6E /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF03A2459700F00683B6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FCEF0432459700F00683B6E /* worst_road_everTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FCEF0452459700F00683B6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FCEF04E2459700F00683B6E /* worst_road_everUITests.swift in Sources */,
+				1F4C38EC2459EE40008D1F38 /* ViewController.swift in Sources */,
+				1F4C38E82459EE40008D1F38 /* AppDelegate.swift in Sources */,
+				1F4C38EA2459EE40008D1F38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1FCEF0402459700F00683B6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1FCEF0272459700D00683B6E /* worst-road-ever */;
-			targetProxy = 1FCEF03F2459700F00683B6E /* PBXContainerItemProxy */;
-		};
-		1FCEF04B2459700F00683B6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1FCEF0272459700D00683B6E /* worst-road-ever */;
-			targetProxy = 1FCEF04A2459700F00683B6E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		1FCEF0362459700E00683B6E /* LaunchScreen.storyboard */ = {
+		1F4C38ED2459EE40008D1F38 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FCEF0372459700E00683B6E /* Base */,
+				1F4C38EE2459EE40008D1F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F4C38F22459EE41008D1F38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4C38F32459EE41008D1F38 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1FCEF0502459700F00683B6E /* Debug */ = {
+		1F4C38F62459EE41008D1F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		1FCEF0512459700F00683B6E /* Release */ = {
+		1F4C38F72459EE41008D1F38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,14 +280,12 @@
 			};
 			name = Release;
 		};
-		1FCEF0532459700F00683B6E /* Debug */ = {
+		1F4C38F92459EE41008D1F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"worst-road-ever/Preview Content\"";
 				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "worst-road-ever/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,14 +298,12 @@
 			};
 			name = Debug;
 		};
-		1FCEF0542459700F00683B6E /* Release */ = {
+		1F4C38FA2459EE41008D1F38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"worst-road-ever/Preview Content\"";
 				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "worst-road-ever/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,133 +313,31 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1FCEF0562459700F00683B6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				INFOPLIST_FILE = "worst-road-everTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/worst-road-ever.app/worst-road-ever";
-			};
-			name = Debug;
-		};
-		1FCEF0572459700F00683B6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				INFOPLIST_FILE = "worst-road-everTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/worst-road-ever.app/worst-road-ever";
-			};
-			name = Release;
-		};
-		1FCEF0592459700F00683B6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				INFOPLIST_FILE = "worst-road-everUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "worst-road-ever";
-			};
-			name = Debug;
-		};
-		1FCEF05A2459700F00683B6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z62UW8ZMM7;
-				INFOPLIST_FILE = "worst-road-everUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hacktheflow.worst-road-everUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "worst-road-ever";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FCEF0232459700D00683B6E /* Build configuration list for PBXProject "worst-road-ever" */ = {
+		1F4C38DF2459EE40008D1F38 /* Build configuration list for PBXProject "worst-road-ever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FCEF0502459700F00683B6E /* Debug */,
-				1FCEF0512459700F00683B6E /* Release */,
+				1F4C38F62459EE41008D1F38 /* Debug */,
+				1F4C38F72459EE41008D1F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FCEF0522459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-ever" */ = {
+		1F4C38F82459EE41008D1F38 /* Build configuration list for PBXNativeTarget "worst-road-ever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FCEF0532459700F00683B6E /* Debug */,
-				1FCEF0542459700F00683B6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FCEF0552459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FCEF0562459700F00683B6E /* Debug */,
-				1FCEF0572459700F00683B6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FCEF0582459700F00683B6E /* Build configuration list for PBXNativeTarget "worst-road-everUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FCEF0592459700F00683B6E /* Debug */,
-				1FCEF05A2459700F00683B6E /* Release */,
+				1F4C38F92459EE41008D1F38 /* Debug */,
+				1F4C38FA2459EE41008D1F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1FCEF0202459700D00683B6E /* Project object */;
+	rootObject = 1F4C38DC2459EE40008D1F38 /* Project object */;
 }
