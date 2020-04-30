@@ -39,11 +39,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var vibrationLable: UILabel!
     var vib_value: Double = 0.0
-    let vibThreshold: Double = 2.0
+    let smooth_good: Double = 0.1
+    let smooth_intermediate = 0.25
+    let smooth_bad: Double = 0.5
+    let smooth_horrible: Double = 0.9
+    let smooth_worst: Double = 1.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.vibrationLable.text = "0.00"
+        self.vibrationLable.text = "WORST.ROAD.EVER"
+        surfaceImg.image = #imageLiteral(resourceName: "worst_road")
         // Do any additional setup after loading the view.
         
         motion.startDeviceMotionUpdates()
@@ -75,15 +80,18 @@ class ViewController: UIViewController {
                     let zAcceleration = simd_length(zVector)
                     let direction = sign(Double(zVector.x * zVector.y * zVector.z))
                     print(zAcceleration*direction)
+                    
                     let values = self.vertiacl_accelerations.list
-                    if (values.count >= 120) {
-                        let vib_value = values.max()! - values.min()!
-                        self.vibrationLable.text = String(format:"%.2f", vib_value)
+                    if (values.count >= 90) {
+                        let sum = values.reduce(0,+)
+                        let vib_value = Double(sum) / Double(values.count)
+//                        let vib_value = values.max()! - values.min()!
+                        self.vibrationLable.text = String(format:"Smoothness: %.2f", vib_value)
                         self.updateSurfaceImg(vibration: vib_value)
                         self.vertiacl_accelerations.dequeue()
                         
                     }
-                    self.vertiacl_accelerations.enqueue(zAcceleration*direction)
+                    self.vertiacl_accelerations.enqueue(zAcceleration)
                 }
                 
             })
@@ -94,10 +102,21 @@ class ViewController: UIViewController {
     }
 
     func updateSurfaceImg(vibration: Double) {
-        if (vibration < vibThreshold) {
+        surfaceImg.image = #imageLiteral(resourceName: "excellent")
+        if (vibration > smooth_good) {
             surfaceImg.image = #imageLiteral(resourceName: "1599px-Spring_in_Bystroistokskiy_district_of_Altai_Krai_Russia_06")
-        } else {
+        }
+        if(vibration > smooth_intermediate){
+            surfaceImg.image = #imageLiteral(resourceName: "intermediate")
+        }
+        if(vibration > smooth_bad){
             surfaceImg.image = #imageLiteral(resourceName: "1600px-Mountain-track1")
+        }
+        if(vibration > smooth_horrible){
+            surfaceImg.image = #imageLiteral(resourceName: "very_horrible")
+        }
+        if (vibration > smooth_worst){
+            surfaceImg.image = #imageLiteral(resourceName: "worst_road")
         }
     }
     
