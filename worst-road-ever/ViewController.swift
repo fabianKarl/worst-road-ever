@@ -40,10 +40,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var vibrationLable: UILabel!
     var vib_value: Double = 0.0
     let smooth_good: Double = 0.1
-    let smooth_intermediate = 0.25
-    let smooth_bad: Double = 0.5
-    let smooth_horrible: Double = 0.9
-    let smooth_worst: Double = 1.3
+    let smooth_intermediate = 0.3
+    let smooth_bad: Double = 0.6
+    let smooth_horrible: Double = 1
+    let smooth_worst: Double = 1.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
