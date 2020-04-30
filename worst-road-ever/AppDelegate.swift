@@ -16,39 +16,10 @@ import simd
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    struct Queue<T> {
-         var list = [T]()
-    
-
-    mutating func enqueue(_ element: T) {
-          list.append(element)
-    }
-    mutating func dequeue() -> T? {
-         if !list.isEmpty {
-           return list.removeFirst()
-         } else {
-           return nil
-         }
-    }
-    }
-    
-    let motion: CMMotionManager = CMMotionManager()
-    var timer: Timer = Timer()
-    var controller = ViewController()
-    dynamic var vibration_value: CGFloat = 0.0 {
-        didSet {
-            self.controller.viewDidLoad()
-        }
-    }
-
-    
-    
-    var vertiacl_accelerations = Queue<Double>()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        motion.startDeviceMotionUpdates()
-        startAccelerometers()
+
         return true
     }
     
@@ -65,50 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    
-    func startAccelerometers() {
-        // Make sure the accelerometer hardware is available.
-        if self.motion.isAccelerometerAvailable {
-            self.motion.accelerometerUpdateInterval = 1.0 / 60.0  // 60 Hz
-            self.motion.startAccelerometerUpdates()
-            
-            // Configure a timer to fetch the data.
-            self.timer = Timer(fire: Date(), interval: (1.0/60.0), repeats: true, block: { (timer) in
-                // Get the accelerometer data.
-                // taken from https://stackoverflow.com/questions/47073389/detect-acceleration-in-absolute-vertical-axis
-                if let deviceMotion = self.motion.deviceMotion {
-                    
-                    let gravityVector = simd_double3(x: deviceMotion.gravity.x,
-                                                     y: deviceMotion.gravity.y,
-                                                     z: deviceMotion.gravity.z)
-                    
-                    let userAccelerationVector = simd_double3(x: deviceMotion.userAcceleration.x,
-                                                              y: deviceMotion.userAcceleration.y,
-                                                              z: deviceMotion.userAcceleration.z)
-                    
-                    // Acceleration to/from earth
-                    let zVector = gravityVector * userAccelerationVector
-                    let zAcceleration = simd_length(zVector)
-                    let direction = sign(Double(zVector.x * zVector.y * zVector.z))
-                    print(zAcceleration*direction)
-                    let values = self.vertiacl_accelerations.list
-                    if (values.count >= 120) {
-                        self.controller.vib_value = values.max()! - values.min()!
-                        self.vibration_value = CGFloat(values.max()! - values.min()!)
-                        
-                        self.vertiacl_accelerations.dequeue()
-                        
-                    }
-                    self.vertiacl_accelerations.enqueue(zAcceleration*direction)
-                }
-                
-            })
-            
-            // Add the timer to the current run loop.
-            RunLoop.current.add(self.timer, forMode: RunLoop.Mode.default)
-        }
-    }
-    
-    
 }
 
