@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     }
     }
     
+    @IBOutlet weak var surfaceImg: UIImageView!
+    
     let motion: CMMotionManager = CMMotionManager()
     var timer: Timer = Timer()
     var vibration_value: Double = 0.0
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var vibrationLable: UILabel!
     var vib_value: Double = 0.0
-    
+    let vibThreshold: Double = 2.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
                     if (values.count >= 120) {
                         let vib_value = values.max()! - values.min()!
                         self.vibrationLable.text = String(format:"%.2f", vib_value)
+                        self.updateSurfaceImg(vibration: vib_value)
                         self.vertiacl_accelerations.dequeue()
                         
                     }
@@ -90,6 +93,13 @@ class ViewController: UIViewController {
         }
     }
 
-
+    func updateSurfaceImg(vibration: Double) {
+        if (vibration < vibThreshold) {
+            surfaceImg.image = #imageLiteral(resourceName: "1599px-Spring_in_Bystroistokskiy_district_of_Altai_Krai_Russia_06")
+        } else {
+            surfaceImg.image = #imageLiteral(resourceName: "1600px-Mountain-track1")
+        }
+    }
+    
 }
 
